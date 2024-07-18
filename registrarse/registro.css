@@ -1,0 +1,54 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background:#B9E6E1; ;
+}
+label{
+    color: rgb(8, 8, 8);
+    font-size: 16px;
+    display: flex;
+    background-color: #fdfcfd;
+    align-items: center;
+
+    
+}
+form{
+    max-width: 450px;
+    width: 450px;
+    margin: 0 auto;
+    background-color: #fdfcfd;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 14px;
+}
+
+input, select, button{
+    padding: 12px;
+    border:  solid 2px #ffd5ef;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fdfcfd;
+
+}
+
+button{
+    background-color: #F2D0F0;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+button:hover{
+    background-color: #BD30BF;
+    color:rgb(0, 0, 0);
+
+}
+.button__checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #fdfcfd;
+   
+}

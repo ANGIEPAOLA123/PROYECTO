@@ -20,7 +20,7 @@ body {
 .login-container img {
     display: block;
     margin: 0 auto 20px;
-    max-width: 100%;
+    max-width: 100%; 
     height: auto;
 }
 
@@ -66,13 +66,10 @@ body {
     background-color: #BD30BF;
 }
 
-/* Media query para pantallas más pequeñas */
-@media screen and (max-width: 600px) {
-    .login-container {
-        width: 90%;
-    }
-
-    .login-container button {
-        width: 100%;
-    }
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
 }
+
+
