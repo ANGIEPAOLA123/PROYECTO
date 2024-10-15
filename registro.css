@@ -30,14 +30,31 @@ label {
     font-size: 14px;
 }
 
-input[type="email"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
     width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px auto; /* Centramos el campo con margin auto */
     font-size: 16px;
-    display: block; /* Hacer que el campo sea un bloque */
+    display: block; /* Hacer que los campos sean bloques */
+}
+
+
+.button__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.button__checkbox input[type="checkbox"] {
+    margin-right: 10px;
 }
 
 button {

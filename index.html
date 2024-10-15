@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login - Sistema de Inventario</title>
     <link rel="stylesheet" href="styles.css">
-    
-   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="login-container">
-        <img src="imagenes/image_15removebg-preview.png" alt="Logo">
+        <img src="imagenes/papel y arte.svg" alt="Logo">
         <h2>Ingreso</h2>
-        <p>Inicia sesión para continuar</p>
-        <form action="#" method="post">
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required>
-            <label1 for="password">Contraseña:</label1>
-            <input type="password" id="password" name="password" required>
+        <form id="loginForm">
+            <div class="input-icon">
+                <i class='bx bxs-user'></i>
+                <input type="text" id="username" autocomplete="off" placeholder="Ingresa tu Usuario" required>
+            </div>
+            <div class="input-icon">
+                <i class='bx bxs-key'></i>
+                <input type="password" id="password" autocomplete="off" placeholder="Ingresa tu contraseña" required>
+            </div>
             <button type="submit">Ingresar</button>
-            <p><a href="recuperar contraseña/recuperar.html">Olvide mi Contraseña</a></p>
-            <p><a href="olvideusuario.html">Olvide mi Usuario</a></p>
         </form>
+        <button type="button" onclick="window.location.href='registro.html'">Registrarse</button>
+        <p><a href="recuperar contraseña/recuperar.html">Olvidé mi Contraseña</a></p>
+        <p id="error" style="color: red; display: none;">Usuario o contraseña incorrectos</p>
     </div>
-    
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Simulando login con datos predefinidos (usuario: admin, contraseña: 1234)
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === 'admin' && password === '1234') {
+                // Si el login es correcto, redirige al dashboard
+                window.location.href = 'index.html';
+            } else {
+                // Si el login falla, muestra un mensaje de error
+                document.getElementById('error').style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>
+
+

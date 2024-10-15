@@ -9,18 +9,18 @@ body {
 }
 
 .login-container {
-    max-width: 400px; /* Ajustar el ancho máximo del contenedor */
-    width: 80%; /* Hacerlo adaptable */
+    max-width: 400px;
+    width: 90%;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .login-container img {
     display: block;
     margin: 0 auto 20px;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -30,40 +30,67 @@ body {
     margin-bottom: 20px;
 }
 
-.login-container p {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.login-container label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.login-container input[type="text"],
-.login-container input[type="password"] {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
+.input-icon {
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Centrar el contenedor en el padre */
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 100%; /* Ancho completo del contenedor padre */
+    max-width: 350px; /* Establecer un ancho máximo para evitar que sea demasiado grande */
+    
+}
+
+.input-icon i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #666;
+}
+
+.input-icon input {
+    width: 100%; /* El input ocupa el espacio restante en el contenedor */
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
 }
 
 .login-container button {
-    width: 60%;
-    padding: 12px;
+    width: 40%;  /* Cambia el ancho a un 40% para hacerlo más pequeño */
+    padding: 10px;  /* Ajusta el padding para reducir el tamaño general del botón */
     background-color: #F2D0F0;
     border: none;
     border-radius: 4px;
     color: #000;
-    font-size: 16px;
-    margin: 20px auto 0; /* Centrar el botón horizontalmente y ajustar el margen superior */
-    display: block; /* Asegurar que el botón sea un bloque para ocupar el ancho disponible */
-    cursor: pointer;}
+    font-size: 14px;  /* Reduce el tamaño de la fuente */
+    margin: 20px auto 0;  /* Centra el botón usando 'margin: auto' y ajusta el margen superior */
+    cursor: pointer;
+    display: block;
+}
 
 .login-container button:hover {
+    background-color: #BD30BF;  /* Color al pasar el cursor */
+}
+.login-container button:hover {
     background-color: #BD30BF;
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container a {
+    text-decoration: none;
+    color: #EE529C;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
 }
 
 /* Media query para pantallas más pequeñas */

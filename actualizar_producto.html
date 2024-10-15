@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Producto</title>
+    <link rel="stylesheet" href="actualizar_producto.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Actualizar Producto</h2>
+        <form action="actualizarProductoProceso.jsp" method="post">
+            <!-- Campo oculto para enviar el ID del producto -->
+            <input type="hidden" name="id_producto" value="">
+
+            <!-- Nombre del producto -->
+            <div class="form-group">
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre_producto" placeholder="Nombre del Producto" required>
+            </div>
+
+            <!-- Descripción del producto -->
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion_producto" rows="4" placeholder="Descripción del producto" required></textarea>
+            </div>
+
+            <!-- Precio del producto en COP -->
+            <div class="form-group">
+                <label for="precio">Precio (COP):</label>
+                <input type="number" id="precio" name="precio_producto" step="0.01" placeholder="Precio del Producto" required>
+            </div>
+
+            <!-- Cantidad del producto -->
+            <div class="form-group">
+                <label for="cantidad">Cantidad Disponible:</label>
+                <input type="number" id="cantidad" name="cantidad_producto" placeholder="Cantidad Disponible" required>
+            </div>
+
+            <!-- Botón de enviar -->
+            <div class="form-group">
+                <button type="submit">Actualizar Producto</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

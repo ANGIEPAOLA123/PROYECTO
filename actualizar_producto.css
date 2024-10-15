@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #B9E6E1;
@@ -8,70 +9,65 @@ body {
     margin: 0;
 }
 
-.contenedor_principal {
-    max-width: 400px;
-    width: 90%;
-    padding: 20px;
+/* Form Container */
+.container {
     background-color: #fff;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
 }
 
+/* Heading */
 h2 {
     text-align: center;
     color: #EE529C;
     margin-bottom: 20px;
 }
 
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label */
 label {
     display: block;
     margin-bottom: 5px;
     color: #666;
-    font-size: 14px;
 }
 
-input[type="email"] {
-    width: 80%;
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 10px auto; /* Centramos el campo con margin auto */
     font-size: 16px;
-    display: block; /* Hacer que el campo sea un bloque */
+    box-sizing: border-box;
 }
 
+/* Button */
 button {
-    width: 100%; 
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     background-color: #F2D0F0;
     border: none;
-    border-radius: 4px;
-    color: #000;
+    border-radius: 5px;
+    color: black;
     font-size: 16px;
-    margin-top: 20px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #BD30BF;
+    background-color:#EE529C
 }
 
-p {
-    text-align: center;
-    margin-top: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #EE529C;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
+/* Responsive for smaller screens */
 @media screen and (max-width: 600px) {
-    .contenedor_principal {
+    .container {
         width: 90%;
     }
 }
